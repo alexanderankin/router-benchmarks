@@ -1,0 +1,19 @@
+{
+  "name": "router-benchmarks",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "portfinder": "^1.0.28"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^8.1.3"
+  }
+}
