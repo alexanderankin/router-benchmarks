@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "polka": "^0.5.2",
     "polkadot": "^1.0.0",
     "polkadot-router": "^2.1.0",
     "portfinder": "^1.0.28"
