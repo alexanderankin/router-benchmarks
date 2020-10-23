@@ -3,8 +3,9 @@ var { expect } = require('chai');
 var rb = require('../src');
 
 describe.only('router-same-behavior', () => {
-  it('should make sure the routers are the same', async () => {
-    for (var router in rb.routers) {
+  for (var router in rb.routers) {
+    it(`should make sure the ${router} router is the same`, async () => {
+
       var createApp = rb.routers[router];
       var app = createApp();
       var { port, server } = await rb.run.startServer(app);
@@ -106,6 +107,6 @@ describe.only('router-same-behavior', () => {
       expect(seeNone.statusCode).to.equal(200);
 
       await new Promise(r => server.close(r));
-    }
-  });
+    });
+  }
 })
